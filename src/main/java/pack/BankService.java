@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class BankService {
 
     private final RestTemplate restTemplate;
-    private final String BASE_URL = "http://localhost:8080/api/";
+    private final String BASE_URL = "https://wsrestful.herokuapp.com/api/";
     public BankService(RestTemplate restTemplate){
         this.restTemplate = restTemplate;
         restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory());

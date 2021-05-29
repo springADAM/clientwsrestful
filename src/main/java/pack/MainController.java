@@ -52,7 +52,6 @@ public class MainController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         array = new ArrayList(bankService.getAllBanks());
-        System.out.println(array.toString());
         nBanque.setCellValueFactory(new PropertyValueFactory<>("nbanque"));
         nCompte.setCellValueFactory(new PropertyValueFactory<>("ncompte"));
         nCompteEuro.setCellValueFactory(new PropertyValueFactory<>("ncompteeuro"));
